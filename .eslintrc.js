@@ -10,5 +10,5 @@ module.exports = {
     jest: true,
   },
   plugins: ["react", "react-hooks"],
-  extends: ["eslint:recommended"],
+  extends: ["eslint:recommended", "plugin:react/recommended"],
 };
