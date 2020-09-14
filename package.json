@@ -1,6 +1,7 @@
 {
   "name": "spark",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "private": true,
   "description": "Thinkspaces Minimal Design System",
   "repository": "git@github.com:thinkspaces/spark.git",
   "scripts": {
