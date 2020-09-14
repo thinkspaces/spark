@@ -1,0 +1,6 @@
+{
+  "name": "@thinkspaces/css",
+  "version": "1.0.0",
+  "description": "Spark UI css package",
+  "main": "index.js"
+}

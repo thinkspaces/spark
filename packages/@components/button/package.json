@@ -1,0 +1,10 @@
+{
+  "name": "@components/button",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Spark UI button component in React",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thinkspaces/spark"
+  }
+}
