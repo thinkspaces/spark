@@ -2,5 +2,8 @@
   "name": "@thinkspaces/spark",
   "version": "1.0.0",
   "description": "Spark UI",
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "@components/button": "^1.0.0"
+  }
 }
