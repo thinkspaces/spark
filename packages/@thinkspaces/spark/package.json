@@ -1,10 +1,10 @@
 {
   "name": "@thinkspaces/spark",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Spark UI",
   "main": "dist/index.js",
   "dependencies": {
-    "@components/button": "^1.1.0"
+    "@components/button": "^1.1.1"
   },
   "scripts": {
     "build": "webpack --config ../../../webpack.prod.js"
