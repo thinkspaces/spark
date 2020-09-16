@@ -1,6 +1,6 @@
 {
   "name": "@thinkspaces/spark",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Spark UI",
   "main": "dist/index.js",
   "files": [
