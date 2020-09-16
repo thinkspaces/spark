@@ -3,7 +3,10 @@
   "version": "1.0.2",
   "description": "Spark UI",
   "main": "dist/index.js",
-  "dependencies": {
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
     "@components/button": "^1.1.1"
   },
   "scripts": {
