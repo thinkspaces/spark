@@ -1,14 +1,17 @@
 module.exports = {
   parser: "babel-eslint",
-  parserOptions: {
-    sourceType: "module",
-  },
   env: {
     browser: true,
     node: true,
     es6: true,
     jest: true,
   },
-  plugins: ["react", "react-hooks"],
-  extends: ["eslint:recommended", "plugin:react/recommended"],
+  extends: ["airbnb", "prettier", "prettier/react"],
+  plugins: ["babel", "react", "react-hooks"],
+  rules: {
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-filename-extension": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/require-default-props": 0,
+  },
 };
