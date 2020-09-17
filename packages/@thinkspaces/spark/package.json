@@ -1,6 +1,6 @@
 {
   "name": "@thinkspaces/spark",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Spark UI",
   "module": "dist/index.js",
   "main": "dist/index.js",
