@@ -16,7 +16,7 @@
   },
   "scripts": {
     "build": "webpack --config ../../../webpack.prod.js",
-    "prepare": "rm -rf dist && yarn build",
-    "publish": "npm publish"
+    "prerelease": "rm -rf dist && yarn build",
+    "relase": "npm publish"
   }
 }
