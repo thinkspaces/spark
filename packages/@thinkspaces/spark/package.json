@@ -1,6 +1,6 @@
 {
   "name": "@thinkspaces/spark",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Spark UI",
   "module": "dist/index.js",
   "main": "dist/index.js",
@@ -17,6 +17,6 @@
   "scripts": {
     "build": "webpack --config ../../../webpack.prod.js",
     "prerelease": "rm -rf dist && yarn build",
-    "relase": "npm publish"
+    "release": "npm publish"
   }
 }
