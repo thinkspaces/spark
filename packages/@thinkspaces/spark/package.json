@@ -1,6 +1,20 @@
 {
   "name": "@thinkspaces/spark",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Spark UI",
-  "main": "index.js"
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@components/button": "^1.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "build": "webpack --config ../../../webpack.prod.js",
+    "prepublish": "rm -rf dist/ && npm run build"
+  }
 }

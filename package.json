@@ -11,6 +11,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/prompt-cli": "^11.0.0",
@@ -20,7 +24,15 @@
     "@storybook/react": "^6.0.21",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "clean-webpack-plugin": "^3.0.0",
     "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
     "husky": "^4.3.0",
@@ -28,7 +40,10 @@
     "lint-staged": "^10.3.0",
     "prettier": "^2.1.1",
     "react-is": "^16.13.1",
-    "standard-version": "^9.0.0"
+    "standard-version": "^9.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.1.4"
   },
   "husky": {
     "hooks": {
@@ -39,5 +54,8 @@
   "workspaces": [
     "packages/*/*"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }

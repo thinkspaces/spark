@@ -1,6 +1,6 @@
 {
   "name": "@components/button",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "main": "index.js",
   "description": "Spark UI button component in React",
   "repository": {
@@ -11,5 +11,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "dependencies": {
+    "styled-components": "^5.2.0"
   }
 }
