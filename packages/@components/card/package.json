@@ -1,6 +1,6 @@
 {
   "name": "@components/card",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "description": "Spark UI card component in React",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/thinkspaces/spark"
   },
   "devDependencies": {
-    "@components/button": "^1.1.1",
+    "@components/button": "^1.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
