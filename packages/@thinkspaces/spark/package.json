@@ -1,6 +1,6 @@
 {
   "name": "@thinkspaces/spark",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "description": "Spark UI",
   "module": "dist/index.js",
   "main": "dist/index.js",
@@ -9,12 +9,14 @@
   ],
   "peerDependencies": {
     "@components/button": "^1.1.1",
+    "@components/card": "^1.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "scripts": {
     "build": "webpack --config ../../../webpack.prod.js",
-    "prepublish": "rm -rf dist/ && npm run build"
+    "prerelease": "rm -rf dist && yarn build",
+    "release": "npm publish"
   }
 }

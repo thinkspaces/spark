@@ -1,8 +1,10 @@
 .DS_Store
 coverage
-npm-debug.log
-build-storybook.log
+
+*.log
+
 dist
+
 node_modules
 .package-lock.json
 

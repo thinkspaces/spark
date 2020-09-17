@@ -1,4 +1,4 @@
-/* eslint import/prefer-default-export: 0 */
 import Button from "@components/button";
+import Card from "@components/card";
 
-export { Button };
+export { Button, Card };
