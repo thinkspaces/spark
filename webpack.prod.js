@@ -10,7 +10,7 @@ module.exports = merge(common, {
         root: "React",
         commonjs2: "react",
         commonjs: "react",
-        umd: "react",
+        amd: "react",
       },
     },
     {
@@ -18,7 +18,7 @@ module.exports = merge(common, {
         root: "ReactDom",
         commonjs2: "react-dom",
         commonjs: "react-dom",
-        umd: "react-dom",
+        amd: "react-dom",
       },
     },
   ],

@@ -2,6 +2,7 @@
   "name": "@thinkspaces/spark",
   "version": "1.0.4",
   "description": "Spark UI",
+  "module": "dist/index.js",
   "main": "dist/index.js",
   "files": [
     "dist"
