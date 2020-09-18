@@ -1,0 +1,35 @@
+import { ColorBlockList, GridContainer } from '../components';
+import colors from '../../colors';
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Design Tokens/Colors" />
+
+# Colors
+
+With `colors` tokens you have access to entire Spark color palette. Designed to build up Spark influence components, elements and more.
+
+## Base Colors
+
+<GridContainer>
+    <ColorBlockList label="red" colors={colors.baseColors.red} />
+    <ColorBlockList label="blue" colors={colors.baseColors.blue} />
+    <ColorBlockList label="green" colors={colors.baseColors.green} />
+    <ColorBlockList label="gold" colors={colors.baseColors.gold} />
+</GridContainer>
+
+<p>&nbsp;</p>
+
+<GridContainer>
+    <div>
+        <h2>Neutral Colors</h2>
+        <ColorBlockList label="gray" colors={colors.neutralColors.gray} />
+    </div>
+    <div>
+        <h2>Brand Colors</h2>
+        <ColorBlockList labelColor="white" colors={colors.brandColors} />
+    </div>
+    <div>
+        <h2>Functional Colors</h2>
+        <ColorBlockList labelColor="white" colors={colors.functionalColors} />
+    </div>
+</GridContainer>
