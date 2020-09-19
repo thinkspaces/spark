@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/thinkspaces/spark/compare/@thinkspaces/tokens@1.3.0...@thinkspaces/tokens@1.4.0) (2020-09-19)
+
+
+### Features
+
+* **design-tokens:** adding color tokens docs ([9ffdde0](https://github.com/thinkspaces/spark/commit/9ffdde04f747e95108109cfa645c84c8a4aa8c80))
+
+
+
+
+
 # 1.3.0 (2020-09-17)
 
 
