@@ -49,3 +49,29 @@ export const GridContainer = ({ children }) => (
     {children}
   </div>
 );
+
+export const SimpleGrid = ({ children }) => (
+  <div
+    style={{
+      display: 'grid',
+      gridTemplateColumns: '1fr',
+      gridTemplateRows: 'auto',
+    }}
+  >
+    {children}
+  </div>
+);
+
+export const SubGrid = ({ children }) => (
+  <div
+    style={{
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr 1fr',
+      borderBottom: '1px solid lightgray',
+    }}
+  >
+    {children}
+  </div>
+);
+
+export const Spacer = () => <p>&nbsp;</p>;
