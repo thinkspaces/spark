@@ -1,5 +1,6 @@
 import { Meta } from '@storybook/addon-docs/blocks';
-import { Spacer, SimpleGrid, SubGrid } from '../components';
+import { ColorBlock, Spacer, SimpleGrid, SubGrid } from '../docs/components';
+import typography from '../typography';
 
 <Meta title="Design Tokens/Typography" />
 
@@ -90,3 +91,36 @@ Spark provides different sizes tokens to provide a seamless experience across la
         <p>1.18</p>
     </SubGrid>
 </SimpleGrid>
+
+<Spacer/>
+
+## Font Weights
+
+<h1 style={{ fontWeight: 300 }}>Light</h1>
+<p>font-weight-300</p>
+
+<h1 style={{ fontWeight: 400 }}>Regular</h1>
+<p>font-weight-400</p>
+
+<h1 style={{ fontWeight: 600 }}>Medium</h1>
+<p>font-weight-600</p>
+
+<Spacer/>
+
+## Font Families
+
+<p style={{ fontFamily: 'HelveticaNeue, sans-serif', fontSize: 26 }}>The primary font family for most typographic scenarios</p>
+<p>font-family-main</p>
+<p style={{ fontFamily: 'source-code pro, Menlo, Consolas, monospace', fontSize: 26 }}>The monospace/code font family</p>
+<p>font-family-code</p>
+
+<Spacer />
+
+## Color Schemes
+
+<div style={{ maxWidth: 600 }}>
+    <ColorBlock label="title-primary" color={typography.fontColors.title.primary} colorLabel="gray-10" />
+    <ColorBlock label="text-primary" color={typography.fontColors.text.primary} colorLabel="gray-9" />
+    <ColorBlock label="text-secondary" color={typography.fontColors.text.secondary} colorLabel="gray-7" />
+    <ColorBlock label="disabled" color={typography.fontColors.disabled} colorLabel="gray-6"/>
+</div>

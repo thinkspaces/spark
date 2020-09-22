@@ -1,31 +1,38 @@
 /* eslint import/prefer-default-export: 0, react/prop-types: 0 */
-import React from 'react';
+import React from "react";
 
-export const ColorBlock = ({ labelColor, label, color }) => (
-  <div
-    style={{
-      display: 'flex',
-      flex: 1,
-      justifyContent: 'space-between',
-      padding: 12,
-      background: color,
-      color: labelColor,
-    }}
-  >
-    <span>{label}</span>
-    <span>{color}</span>
-  </div>
-);
+export const ColorBlock = ({
+  labelColor = "white",
+  label,
+  color,
+  colorLabel = color,
+}) => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flex: 1,
+        justifyContent: "space-between",
+        padding: 12,
+        background: color,
+        color: labelColor,
+      }}
+    >
+      <span>{label}</span>
+      <span>{colorLabel}</span>
+    </div>
+  );
+};
 
 export const ColorBlockList = ({
-  label = '',
-  labelColor = 'black',
+  label = "",
+  labelColor = "black",
   colors,
 }) => {
   return (
     <div>
       {Object.keys(colors).map((color, idx) => {
-        if (idx > 4) labelColor = 'white';
+        if (idx > 4) labelColor = "white";
         return (
           <ColorBlock
             labelColor={labelColor}
@@ -41,8 +48,8 @@ export const ColorBlockList = ({
 export const GridContainer = ({ children }) => (
   <div
     style={{
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
       gridGap: 20,
     }}
   >
@@ -53,9 +60,9 @@ export const GridContainer = ({ children }) => (
 export const SimpleGrid = ({ children }) => (
   <div
     style={{
-      display: 'grid',
-      gridTemplateColumns: '1fr',
-      gridTemplateRows: 'auto',
+      display: "grid",
+      gridTemplateColumns: "1fr",
+      gridTemplateRows: "auto",
     }}
   >
     {children}
@@ -65,9 +72,9 @@ export const SimpleGrid = ({ children }) => (
 export const SubGrid = ({ children }) => (
   <div
     style={{
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr 1fr',
-      borderBottom: '1px solid lightgray',
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr 1fr",
+      borderBottom: "1px solid lightgray",
     }}
   >
     {children}
