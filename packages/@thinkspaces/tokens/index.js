@@ -1,21 +1,9 @@
 import colors from "colors";
-
-const colorScheme = {
-  title: {
-    primary: colors.neutralColors.gray[10],
-  },
-  text: {
-    primary: colors.neutralColors.gray[9],
-    secondary: colors.neutralColors.gray[7],
-  },
-};
+import typography from "typography";
 
 const designTokens = {
-  font: {
-    bold: "bold",
-    italic: "italic",
-  },
-  colorScheme,
+  font: typography,
+  colors,
 };
 
 export default designTokens;
