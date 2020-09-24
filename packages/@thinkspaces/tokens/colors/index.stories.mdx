@@ -1,4 +1,4 @@
-import { ColorBlockList, GridContainer } from '../docs/components';
+import { ColorBlock, ColorBlockList, GridContainer } from '../docs/components';
 import colors from '../colors';
 import { Meta } from '@storybook/addon-docs/blocks';
 
@@ -26,10 +26,17 @@ With `colors` tokens you have access to entire Spark color palette. Designed to 
     </div>
     <div>
         <h2>Semantic Colors</h2>
-        <ColorBlockList labelColor="white" colors={colors.semanticColors} />
+        <ColorBlock label="informative" color={colors.semanticColors.informative} colorLabel="blue-6" />
+        <ColorBlock label="positive" color={colors.semanticColors.positive} colorLabel="green-6" />
+        <ColorBlock label="notice" color={colors.semanticColors.notice} colorLabel="gold-6" />
+        <ColorBlock label="negative" color={colors.semanticColors.negative}colorLabel="red-5" />
     </div>
     <div>
         <h2>Brand Colors</h2>
-        <ColorBlockList labelColor="white" colors={colors.brandColors} />
+        <ColorBlock label="brand" color={colors.brandColors.brand} colorLabel="blue-6" />
+        <ColorBlock label="background" labelColor="black" color={colors.brandColors.background} colorLabel="blue-1" />
+        <ColorBlock label="hover" color={colors.brandColors.hover} colorLabel="blue-5" />
+        <ColorBlock label="normal" color={colors.brandColors.normal} colorLabel="blue-6" />
+        <ColorBlock label="click" color={colors.brandColors.click} colorLabel="blue-7" />
     </div>
 </GridContainer>

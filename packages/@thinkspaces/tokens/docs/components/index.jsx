@@ -36,7 +36,7 @@ export const ColorBlockList = ({
         return (
           <ColorBlock
             labelColor={labelColor}
-            label={`${label} ${color}`}
+            label={`${label}-${color}`}
             color={colors[color]}
           />
         );
