@@ -38,4 +38,4 @@ Title.propTypes = {
   children: PropTypes.node,
 };
 
-export { Title };
+export default Title;

@@ -1,4 +1,4 @@
 import Text from "./text";
-import { Title } from "./index";
+import Title from "./title";
 
 export { Text, Title };

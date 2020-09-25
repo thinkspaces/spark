@@ -1,47 +1,74 @@
+// Libraries
 import React from "react";
 import PropTypes from "prop-types";
+
 // Styles
 import {
   Container,
+  primaryStyle,
   informativeStyle,
   positiveStyle,
   noticeStyle,
   negativeStyle,
+  bodyStyle,
+  captionStyle,
+  subtitleStyle,
+  detailStyle,
 } from "./styles";
 
-const Text = ({ children, variant = "default", ...props }) => {
-  let styles = "";
-  switch (variant) {
+const Text = ({ children, color = "primary", variant = "body", ...props }) => {
+  let colorStyle = primaryStyle;
+  switch (color) {
     case "informative":
-      styles = informativeStyle;
+      colorStyle = informativeStyle;
       break;
     case "positive":
-      styles = positiveStyle;
+      colorStyle = positiveStyle;
       break;
     case "notice":
-      styles = noticeStyle;
+      colorStyle = noticeStyle;
       break;
     case "negative":
-      styles = negativeStyle;
+      colorStyle = negativeStyle;
       break;
     default:
-      styles = "";
+      colorStyle = primaryStyle;
       break;
   }
+
+  let variantStyle = bodyStyle;
+  switch (variant) {
+    case "caption":
+      variantStyle = captionStyle;
+      break;
+    case "subtitle":
+      variantStyle = subtitleStyle;
+      break;
+    case "detail":
+      variantStyle = detailStyle;
+      break;
+    default:
+      variantStyle = bodyStyle;
+      break;
+  }
+
   return (
-    <Container styles={styles} {...props}>
+    <Container colorStyle={colorStyle} variantStyle={variantStyle} {...props}>
       {children}
     </Container>
   );
 };
 
 Text.propTypes = {
-  variant: PropTypes.oneOf([
-    "default",
+  color: PropTypes.oneOf([
+    "primary",
     "informative",
     "positive",
     "notice",
     "negative",
   ]),
+  variant: PropTypes.oneOf(["body", "caption", "subtitle", "detail"]),
   children: PropTypes.node,
 };
+
+export default Text;
