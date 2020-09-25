@@ -17,6 +17,11 @@ export const mb = (value) => css`
   margin-bottom: ${value}px;
 `;
 
+export const mv = (value) => css`
+  margin-top: ${value}px;
+  margin-bottom: ${value}px;
+`;
+
 export const color = (value) => css`
   color: ${value};
 `;

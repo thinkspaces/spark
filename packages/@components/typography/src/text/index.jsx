@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import {
   Container,
   primaryStyle,
+  secondaryStyle,
   informativeStyle,
   positiveStyle,
   noticeStyle,
@@ -16,9 +17,19 @@ import {
   detailStyle,
 } from "./styles";
 
-const Text = ({ children, color = "primary", variant = "body", ...props }) => {
+const Text = ({
+  children,
+  color = "primary",
+  variant = "body",
+  disabled = false,
+  paragraph = false,
+  ...props
+}) => {
   let colorStyle = primaryStyle;
   switch (color) {
+    case "secondary":
+      colorStyle = secondaryStyle;
+      break;
     case "informative":
       colorStyle = informativeStyle;
       break;
@@ -53,7 +64,13 @@ const Text = ({ children, color = "primary", variant = "body", ...props }) => {
   }
 
   return (
-    <Container colorStyle={colorStyle} variantStyle={variantStyle} {...props}>
+    <Container
+      colorStyle={colorStyle}
+      variantStyle={variantStyle}
+      disabled={disabled}
+      paragraph={paragraph}
+      {...props}
+    >
       {children}
     </Container>
   );
@@ -62,12 +79,15 @@ const Text = ({ children, color = "primary", variant = "body", ...props }) => {
 Text.propTypes = {
   color: PropTypes.oneOf([
     "primary",
+    "secondary",
     "informative",
     "positive",
     "notice",
     "negative",
   ]),
   variant: PropTypes.oneOf(["body", "caption", "subtitle", "detail"]),
+  disabled: PropTypes.bool,
+  paragraph: PropTypes.bool,
   children: PropTypes.node,
 };
 

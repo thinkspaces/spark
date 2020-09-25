@@ -2,11 +2,21 @@
 import styled, { css } from "styled-components";
 
 // Utilities
-import { fontStyle, fontWeight, typeScale, color } from "@thinkspaces/styled";
+import {
+  fontStyle,
+  fontWeight,
+  typeScale,
+  color,
+  mb,
+} from "@thinkspaces/styled";
 import tokens from "@thinkspaces/tokens";
 
 const primaryStyle = css`
-  ${color(tokens.typography.fontColors.text.primary)};
+  ${color(tokens.typography.fontColors.text.primary)}
+`;
+
+const secondaryStyle = css`
+  ${color(tokens.typography.fontColors.text.secondary)}
 `;
 
 const informativeStyle = css`
@@ -48,16 +58,32 @@ const detailStyle = css`
   text-transform: uppercase;
 `;
 
+const disabledStyle = css`
+  ${color(tokens.typography.fontColors.disabled)}
+  cursor: not-allowed;
+`;
+
+const paragraphStyle = css`
+  ${mb(16)}
+`;
+
 const Container = styled.span`
+  display: block;
+  margin-bottom: 5px;
   ${fontWeight(tokens.typography.fontWeights.regular)}
   ${fontStyle("normal")};
   ${(props) => props.variantStyle}
   ${(props) => props.colorStyle}
+  ${(props) =>
+    props.disabled && disabledStyle}
+  ${(props) =>
+    props.paragraph && paragraphStyle}
 `;
 
 export {
   Container,
   primaryStyle,
+  secondaryStyle,
   informativeStyle,
   positiveStyle,
   noticeStyle,
