@@ -18,5 +18,8 @@
     "build": "webpack --config ../../../webpack.prod.js",
     "prerelease": "rm -rf dist && yarn build",
     "release": "npm publish"
+  },
+  "devDependencies": {
+    "@components/typography": "^1.0.0"
   }
 }
