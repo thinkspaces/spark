@@ -1,6 +1,6 @@
 {
   "name": "@components/typography",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "description": "Spark UI Typography component",
   "repository": {
@@ -8,8 +8,8 @@
     "url": "https://github.com/thinkspaces/spark"
   },
   "devDependencies": {
-    "@thinkspaces/styled": "^1.0.0",
-    "@thinkspaces/tokens": "^1.4.0",
+    "@thinkspaces/styled": "^1.1.0",
+    "@thinkspaces/tokens": "^1.5.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

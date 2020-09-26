@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/thinkspaces/spark/compare/@thinkspaces/tokens@1.3.0...@thinkspaces/tokens@1.5.0) (2020-09-26)
+
+
+### Features
+
+* **typography:** added type system tokens and docs ([#9](https://github.com/thinkspaces/spark/issues/9)) ([28f3e3e](https://github.com/thinkspaces/spark/commit/28f3e3eacabff72500e6fbf47cd5d016a0b6664d))
+
+
+
+
+
 # [1.4.0](https://github.com/thinkspaces/spark/compare/@thinkspaces/tokens@1.3.0...@thinkspaces/tokens@1.4.0) (2020-09-19)
 
 
