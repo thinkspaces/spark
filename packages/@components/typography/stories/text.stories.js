@@ -8,9 +8,9 @@ export default {
 
 const Template = (args) => <Text {...args}>Spark Text</Text>;
 
-export const Primary = Template.bind({});
+export const Default = Template.bind({});
 
-export const Colors = () => (
+export const ColorScale = () => (
   <div>
     <Text color="primary">Spark Text (primary)</Text>
     <Text color="secondary">Spark Text (secondary)</Text>
@@ -29,6 +29,7 @@ Disabled.args = {
 export const Paragraph = () => (
   <div>
     <Text paragraph>Spark Text</Text>
-    <Text>The text above has paragraph margins</Text>
+    <Text>The text above has paragraph margins. This one doesn't</Text>
+    <Text>You can see normal margins above this one.</Text>
   </div>
 );

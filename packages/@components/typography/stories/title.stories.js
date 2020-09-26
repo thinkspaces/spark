@@ -8,18 +8,18 @@ export default {
 
 const Template = (args) => <Title {...args}>Spark Design</Title>;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Default = Template.bind({});
+Default.args = {
   level: 1,
 };
 
-export const Scale = () => (
+export const HeadingScale = () => (
   <div>
-    <Title level="1">1. Spark Design</Title>
-    <Title level="2">2. Spark Design</Title>
-    <Title level="3">3. Spark Design</Title>
-    <Title level="4">4. Spark Design</Title>
-    <Title level="5">5. Spark Design</Title>
-    <Title level="6">6. Spark Design</Title>
+    <Title level="1">h1. Spark Design</Title>
+    <Title level="2">h2. Spark Design</Title>
+    <Title level="3">h3. Spark Design</Title>
+    <Title level="4">h4. Spark Design</Title>
+    <Title level="5">h5. Spark Design</Title>
+    <Title level="6">h6. Spark Design</Title>
   </div>
 );
