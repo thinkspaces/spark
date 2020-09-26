@@ -1,6 +1,6 @@
 {
   "name": "@thinkspaces/spark",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Spark UI",
   "module": "dist/index.js",
   "main": "dist/index.js",
@@ -18,5 +18,8 @@
     "build": "webpack --config ../../../webpack.prod.js",
     "prerelease": "rm -rf dist && yarn build",
     "release": "npm publish"
+  },
+  "devDependencies": {
+    "@components/typography": "^1.1.0"
   }
 }
